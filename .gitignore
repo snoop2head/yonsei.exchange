@@ -71,3 +71,5 @@ yarn-error.log
 # Python files
 .python-version
 test.py
+
+data_wrangled/
