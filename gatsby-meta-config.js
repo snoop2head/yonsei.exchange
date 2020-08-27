@@ -16,7 +16,7 @@ module.exports = {
   keywords: [`연세대학교`, `교환학생`, `해외 교환`, `nlp`, `연세대`],
   comment: {
     disqusShortName: '', // Your disqus-short-name. check disqus.com.
-    utterances: '', // Your repository for archive comment
+    utterances: 'snoop2head/yonsei.exchange', // Your repository for archive comment
   },
   configs: {
     countOfInitialPost: 10, // Config your initial count of post
