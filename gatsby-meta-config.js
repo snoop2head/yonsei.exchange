@@ -1,8 +1,8 @@
 module.exports = {
-  title: `noopy.dev`,
+  title: `yonsei.exchange`,
   description: `Blog posted about ...`,
-  author: `snoop2head`,
-  introduction: `📝 Learn enough to build an idea. 🛠 Concept it, show it to the world.`,
+  author: `YBIGTA`,
+  introduction: `🛤 교환학교에서의 즐거운 해외 생활을 미리 엿보기`,
   siteUrl: `https://noopy.dev/`, // Your blog site url
   social: {
     twitter: ``, // Your Twitter account
@@ -10,13 +10,13 @@ module.exports = {
     medium: '',
     facebook: '',
     facebook: ``, // Your Facebook account
-    linkedin: `young-jin-ahn-b28616117`, // Your LinkedIn account
+    linkedin: ``, // Your LinkedIn account
   },
   icon: `content/assets/studying_snoopy.png`, // Add your favicon
-  keywords: [`blog`, `python`, `data`, `django`, `developer`],
+  keywords: [`연세대학교`, `교환학생`, `해외 교환`, `nlp`, `연세대`],
   comment: {
     disqusShortName: '', // Your disqus-short-name. check disqus.com.
-    utterances: 'snoop2head/noopy', // Your repository for archive comment
+    utterances: '', // Your repository for archive comment
   },
   configs: {
     countOfInitialPost: 10, // Config your initial count of post
