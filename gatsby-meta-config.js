@@ -3,7 +3,7 @@ module.exports = {
   description: `Blog posted about ...`,
   author: `YBIGTA`,
   introduction: `🛤 교환학교에서의 즐거운 해외 생활을 미리 엿보기`,
-  siteUrl: `https://noopy.dev/`, // Your blog site url
+  siteUrl: `https://yonsei-exchange.netlify.app/`, // Your blog site url
   social: {
     twitter: ``, // Your Twitter account
     github: `snoop2head`, // Your GitHub account
