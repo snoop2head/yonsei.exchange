@@ -1,6 +1,6 @@
 module.exports = {
   title: `yonsei.exchange`,
-  description: `Blog posted about ...`,
+  description: `교환학교에서의 즐거운 해외 생활을 미리 엿보기`,
   author: `YBIGTA`,
   introduction: `🛤 교환학교에서의 즐거운 해외 생활을 미리 엿보기`,
   siteUrl: `https://yonsei-exchange.netlify.app/`, // Your blog site url
