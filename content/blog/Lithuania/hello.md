@@ -1,7 +1,7 @@
 ---
 title: 'Welcome Bee starter'
 date: 2020-07-04 12:21:13
-category: 'web'
+category: 'Lithuania'
 thumbnail: './images/hello.png'
 draft: true
 ---
@@ -16,14 +16,14 @@ Welcome, Gatsby! This starter is full-package for your new blog!
 ---
 title: 'Welcome Bee starter'
 date: 2019-2-6 16:21:13
-category: 'development'
+category: 'Lithuania'
 draft: false
 ---
 ```
 
 1. title
 2. date
-3. category
+category: 'Lithuania'
 4. draft
 
 ## 2. Code highlighting
