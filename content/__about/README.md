@@ -96,8 +96,8 @@ lang: 'en'
 * 제목: 학생들이 작성한 리뷰의 제목
 * 학과: 학생들의 연세대 소속 학과. 학생이 해외 교환대학에서 수료한 학과는 상이할 수 있음. 같은 학과라도 학생들이 표기하는 방법은 제각각(ex: UIC Economics / UD / UD Economics / UD 경제 / UD 경제학 등)
 * 년도: 파견 년도
-* BERT_SCORE: [Labeled with BERT model trained with NSMC Corpus](http://nbviewer.jupyter.org/github/snoop2head/yonsei-exchange-program/blob/master/analyze_BERT_nsmc.ipynb). 0과 1의 integer.
-* RNN_SCORE: [Labeled with RNN trained with NSMC Corpus](http://nbviewer.jupyter.org/github/snoop2head/yonsei-exchange-program/blob/master/analyze_RNN.ipynb). 0과 1 사이의 float.
+* BERT_SCORE: Labeled with BERT model trained with NSMC Corpus. 0과 1의 integer.
+* RNN_SCORE: Labeled with RNN trained with NSMC Corpus. 0과 1 사이의 float.
 * href: 해당 학생의 리뷰가 위치한 웹사이트 쿼리. root url은 oia.yonsei.ac.kr
 
 ### [df_specific_wrangle.csv](./data_wrangled/df_specific_wrangle.csv)
