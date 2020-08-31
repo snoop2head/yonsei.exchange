@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react'
 import { graphql } from 'gatsby'
 import queryString from 'query-string'
-import Search from '../components/Search/Search'
+import Search from '../components/search'
 import { Link } from 'gatsby'
 
 import _ from 'lodash'
