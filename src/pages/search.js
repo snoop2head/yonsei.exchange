@@ -4,6 +4,18 @@ import queryString from 'query-string'
 import Search from '../components/Search/Search'
 import { Link } from 'gatsby'
 
+import _ from 'lodash'
+import { Head } from '../components/head'
+import { HOME_TITLE } from '../constants'
+import { Layout } from '../layout'
+import * as Dom from '../utils/dom'
+
+const BASE_LINE = 80
+
+function getDistance(currentPos) {
+  return Dom.getDocumentHeight() - currentPos
+}
+
 const Post = ({ post }) => {
   return (
     <div>
@@ -72,22 +84,32 @@ export default ({ data, location }) => {
     }
   }, [searchPost, location.href])
 
+  const siteTitle = data.site.siteMetadata.title
+
   return (
-    <div>
-      <Search
-        value={state.query}
-        onChange={e => handleChange(e.target.value)}
-        location={location}
-      />
-      {state.filteredData.map((post, index) => {
-        return <Post post={post} key={`post_${index}`} />
-      })}
-    </div>
+    <Layout location={location} title={siteTitle}>
+      <Head title="search" />
+      <div>
+        <Search
+          value={state.query}
+          onChange={e => handleChange(e.target.value)}
+          location={location}
+        />
+        {state.filteredData.map((post, index) => {
+          return <Post post={post} key={`post_${index}`} />
+        })}
+      </div>
+    </Layout>
   )
 }
 
 export const pageQuery = graphql`
   query {
+    site {
+      siteMetadata {
+        title
+      }
+    }
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
       filter: { frontmatter: { category: { ne: null }, draft: { eq: false } } }

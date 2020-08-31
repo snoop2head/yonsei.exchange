@@ -15,20 +15,18 @@ const Search = ({ value, onChange, location }) => {
   }
 
   return (
-    <>
+    <div>
       <div>
-        <div>
-          <AiOutlineSearch />
-          <input
-            placeholder={'검색어를 입력해주세요.'}
-            value={value}
-            onChange={onChange}
-            onKeyPress={handlePress}
-            onBlur={handleBlur}
-          />
-        </div>
+        <AiOutlineSearch />
+        <input
+          placeholder={'검색어를 입력해주세요.'}
+          value={value}
+          onChange={onChange}
+          onKeyPress={handlePress}
+          onBlur={handleBlur}
+        />
       </div>
-    </>
+    </div>
   )
 }
 
