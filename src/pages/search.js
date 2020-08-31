@@ -1,14 +1,14 @@
 import React, { useState, useEffect, useCallback } from 'react'
 import { graphql } from 'gatsby'
 import queryString from 'query-string'
-import Search from '../components/search'
+import { Search } from '../components/search'
 import { Link } from 'gatsby'
 
 import _ from 'lodash'
 import { Head } from '../components/head'
 import { Layout } from '../layout'
 
-const Post = ({ post }) => {
+export const Post = ({ post }) => {
   return (
     <>
       <div>
