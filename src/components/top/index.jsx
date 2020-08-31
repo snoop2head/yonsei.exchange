@@ -13,7 +13,9 @@ export const Top = ({ title, location, rootPath }) => {
           {title}
         </Link>
       )}
-      <GitHubIcon />
+      <Link to={`/search`}>
+        <GitHubIcon />
+      </Link>
     </div>
   )
 }
