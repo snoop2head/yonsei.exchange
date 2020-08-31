@@ -1,5 +1,5 @@
 import React from 'react'
-import { AiOutlineSearch } from 'react-icons/ai'
+import { FaSearch } from 'react-icons/fa'
 
 import './index.scss'
 
@@ -10,7 +10,7 @@ export const GitHubIcon = () => {
       className="github"
       aria-label="GitHub"
     >
-      <AiOutlineSearch fontSize="large" color="secondary" />
+      <FaSearch fontSize="large" style={{ color: 'white' }} />
     </a>
   )
 }

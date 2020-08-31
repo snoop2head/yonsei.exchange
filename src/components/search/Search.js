@@ -1,5 +1,5 @@
 import React from 'react'
-import { AiOutlineSearch } from 'react-icons/ai'
+import { FaSearch } from 'react-icons/fa'
 import { navigate } from 'gatsby'
 
 const Search = ({ value, onChange, location }) => {
@@ -17,7 +17,7 @@ const Search = ({ value, onChange, location }) => {
   return (
     <div>
       <div>
-        <AiOutlineSearch />
+        <FaSearch fontSize="small" style={{ color: 'white' }} />
         <input
           placeholder={'검색어를 입력해주세요.'}
           value={value}
