@@ -10,17 +10,20 @@ import { Layout } from '../layout'
 
 const Post = ({ post }) => {
   return (
-    <div>
-      <Link to={post.node.fields.slug}>
-        <h1>{post.node.frontmatter.title}</h1>
-        <h2>{post.node.frontmatter.date}</h2>
-        <span>{post.node.excerpt}</span>
-      </Link>
-    </div>
+    <>
+      <div>
+        <Link to={post.node.fields.slug}>
+          <h1>{post.node.frontmatter.title}</h1>
+          <h2>{post.node.frontmatter.date}</h2>
+          <span>{post.node.excerpt}</span>
+        </Link>
+      </div>
+    </>
   )
 }
 
 export default ({ data, location }) => {
+  const posts = data.allMarkdownRemark.edges ? data.allMarkdownRemark.edges : []
   const [state, setState] = useState({
     query: '',
     filteredData: [],
@@ -29,8 +32,8 @@ export default ({ data, location }) => {
   const handleChange = query => {
     if (query.trim() === state.query.trim()) {
       setState({
+        ...state,
         query,
-        filteredData: state.filteredData,
       })
       return
     }
@@ -59,12 +62,14 @@ export default ({ data, location }) => {
           (title && title.toLowerCase().includes(searchQuery))
         )
       })
-      setState({
-        query,
-        filteredData,
+      setState(() => {
+        return {
+          query: query,
+          filteredData: filteredData,
+        }
       })
     },
-    [data.allMarkdownRemark.edges]
+    [posts]
   )
 
   useEffect(() => {
