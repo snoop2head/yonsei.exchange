@@ -6,15 +6,7 @@ import { Link } from 'gatsby'
 
 import _ from 'lodash'
 import { Head } from '../components/head'
-import { HOME_TITLE } from '../constants'
 import { Layout } from '../layout'
-import * as Dom from '../utils/dom'
-
-const BASE_LINE = 80
-
-function getDistance(currentPos) {
-  return Dom.getDocumentHeight() - currentPos
-}
 
 const Post = ({ post }) => {
   return (
