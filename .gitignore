@@ -76,3 +76,6 @@ data_wrangled/
 _archive/
 *.ipynb
 modules
+gatsby-search
+*.pptx
+*.pdf
